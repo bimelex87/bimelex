@@ -17,6 +17,7 @@ class WeatherProject extends Component {
         this.state = {forecast : null};
     }
 
+
     componentDodMount() {
         AsyncStorage.getItem(STORAGE_KEY).then(value => {
                                             if(value !== null) {
