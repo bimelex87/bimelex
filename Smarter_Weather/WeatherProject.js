@@ -9,7 +9,7 @@ const STORAGE_KEY = "#smarterWeather:zip";
 
 import OpenWeatherMap from "./open_weather_map";
 
-import photoBackdrop from "./PhotoBackdrop/local_image";
+import PhotoBackdrop from "./PhotoBackdrop/local_image";
 
 class WeatherProject extends Component {
     constructor(props) {
@@ -82,25 +82,26 @@ class WeatherProject extends Component {
     }
 }
 
-const styles = StyleSheet.create ({
-    overlay : { backgroundColor : "rgba(0,0,0,0.1"},
-    row : {
-        flexDirection : "row",
-        flexWidth : "nowrap",
-        alignItems : "center",
-        justifyContent : "center",
-        padding : 24
+const styles = StyleSheet.create({
+    overlay: { backgroundColor: "rgba(0,0,0,0.1)" },
+    row: {
+        flexDirection: "row",
+        flexWrap: "nowrap",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: 24
     },
-    zipContainer : {
-        borderBottomColor : "#DDDDDD",
-        borderBottomWidth : 1,
-        marginLeft : 5,
-        marginTop : 3,
-        width : 80,
-        height : textStyles.baseFontSize * 2,
-        justifyContent : "flex-end"
+    zipContainer: {
+        borderBottomColor: "#DDDDDD",
+        borderBottomWidth: 1,
+        marginLeft: 5,
+        marginTop: 3,
+        width: 80,
+        height: textStyles.baseFontSize * 2,
+        justifyContent: "flex-end"
     },
-    zipCode : {flex : 1}
+    zipCode: { flex: 1 }
 });
+
 
 export default WeatherProject;
